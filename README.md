@@ -33,10 +33,12 @@ Gunakan pustaka bawaan **MicroPython**, pastikan pustaka berikut tersedia:
 #### c. Konfigurasi Kode ESP32
 Ubah bagian berikut sesuai dengan jaringan dan token Ubidots Anda:
 ```python
-WIFI_SSID = "Nama_WiFi"
-WIFI_PASSWORD = "Password_WiFi"
-UBIDOTS_TOKEN = "Token_Ubidots"
-FLASK_URL = "http://192.168.1.13:5000/data"  # Sesuaikan dengan IP Flask Anda
+DEVICE_ID = "sic6-togetherness-squad"
+WIFI_SSID = "F"
+WIFI_PASSWORD = "q12345678"
+UBIDOTS_TOKEN = "BBUS-k2NJrQUkSnRsTMTQ089853FikiuDIx"
+UBIDOTS_URL = f"http://industrial.api.ubidots.com/api/v1.6/devices/{DEVICE_ID}"
+FLASK_URL = "http://192.168.0.103:5000/data"  # Sesuaikan dengan IP Flask Anda
 ```
 
 ### 2. Menjalankan Server Flask
